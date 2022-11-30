@@ -43,15 +43,15 @@ How to use this project as a starting point
    -- in the resulting `.jar` file, put them into `src/main/resources/`)
 
 5. Edit `src/main/resources/plugins.config`
-   ***Edit: not documented, and not extensively tested but this works and other attempts got errors in ImageJ that didn't run**
-   ***      Needs to match what you put in pom.xml  ***
-   The first entry before the first comma "Process" means your plugin will be appended to the bottom of the Process menu in ImageJ
-   The second entry is the name that will appear in the menu - I think it has to match what you put in pom.xml <name>
-   The third entry, needs to be the concatenation of what you edited the <groupID> and <artefactID> to in pom.xml
-   Edit 2: not quite, I think it NEEDS to match the <properties><main-class> in pom.xml  
-   and it's helpful if that is consistent with the <groupID> and <artefactID>  
-   although the group id is only com.my_Company whereas in <properties> the <package-name> is com.my_company.imagej  
-   and <main-class> is com.my_company.imagej.thePluginClassName
+   ***Edit: not documented, and not extensively tested but this works and other attempts got errors in ImageJ that didn't run**  
+   ***      Needs to match what you put in pom.xml  ***  
+   - The first entry before the first comma "Process" means your plugin will be appended to the bottom of the Process menu in ImageJ.  
+   - The second entry is the name that will appear in the menu - I think it has to match what you put in pom.xml name field
+   - The third entry, needs to be the concatenation of what you edited the groupID and artefactID to in pom.xml
+     Edit 2: not quite, I think it NEEDS to match the properties > main-class  in pom.xml  
+            and it's helpful if that is consistent with the groupID and artefactID  
+            although the group id is only com.my_Company whereas in properties the package-name is com.my_company.imagej  
+            and main-class is com.my_company.imagej.thePluginClassName
 
 6. Replace the contents of `README.md` with information about your project.
    ***Edit*** Well obviously here I've actually just edited the instructions
