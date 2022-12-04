@@ -116,7 +116,7 @@ In the Eclipse Package Explorer, click on the twisty to open up > src/main/java
     This is really confusing to the beginner, you expect pom.xml to be a configuration information file that Eclipse 
     will use to create the project structure, but it does appear to only be a configuration information file for
     the Maven build workflow, so you need to manually change this and other things as follows;
-  - left click it (mouse still over commy_company.imagej), choose Refactor in the context sensitive menu that appears,
+  - left click it (mouse still over com.my_company.imagej), choose Refactor in the context sensitive menu that appears,
     and then Rename in the sub-menu that then appears.  
     In the dialog box that comes up, entre a names that matches the name you have specified in pom.xml and plugins.config
     The default Update Dependencies box is ticked - this works.
