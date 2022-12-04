@@ -47,8 +47,7 @@ How to use this project as a starting point
    ***      Needs to match what you put in pom.xml  ***  
    - The first entry before the first comma "Process" means your plugin will be appended to the bottom of the Process menu in ImageJ.  
    - The second entry is the name that will appear in the menu - I think it has to match what you put in pom.xml name field
-   - The third entry, needs to be the concatenation of what you edited the groupID and artefactID to in pom.xml
-     Edit 2: not quite, I think it NEEDS to match the properties > main-class  in pom.xml  
+   - The third entry, needs to match the properties > main-class  in pom.xml  
             and it's helpful if that is consistent with the groupID and artefactID  
             although the group id is only com.my_Company whereas in properties the package-name is com.my_company.imagej  
             and main-class is com.my_company.imagej.thePluginClassName
@@ -123,7 +122,7 @@ In the Eclipse Package Explorer, click on the twisty to open up > src/main/java
     The default Update Dependencies box is ticked - this works.
     When you click OK (or continue, can't recall now what the proceeed button is titled),
     a warning dialog will then appear, something to do with the main method:
-    this can be ignorted, just click continue.
+    this can be ignored, just click continue.
     
   - then, back in the Package Explorer, click the twisties to open up the next levels  > Process_Pixel.java and then > Process_pixels
   - select the Process_Pixels line ***not*** Process_Pixel.java, left click, Refactor, Rename as before
@@ -143,7 +142,7 @@ An Edit Configuration dialog will appear.
   - You can just click Run with defaults, and it will build thePlugin-version number.jar in the /target folder
   - you can find the .jar in the /target sub folder of the place where you defined GitHub to clone it to
     (i.e. not in a subfolder of the workspace folder Eclipse creates).  Note that you ***won't*** see it in
-    Eclipse Pckage Explorer target folder.
+    Eclipse Package Explorer target folder.
   - you can copy the *.jar manually to the /plugins folder of your normal ImageJ installation,
     and it will then appear as a new last itam on the Process menu (assuming you have at this point kep the
     Process_Pixels cosde, and the first entry in the plugins.config line remains Process)
