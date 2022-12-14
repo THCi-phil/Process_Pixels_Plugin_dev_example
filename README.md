@@ -157,10 +157,12 @@ To make Maven copy the plugin automatically, return to instructions in original 
     - name: `scijava.app.directory`
     - value: `/path/to/ImageJ.app/`
 
-***EDIT: with the correction, the value field should bethe path on your machine to the plugins subfolder of you ImageJ installation
+***EDIT: with the correction, the value field should be the path on your machine to the plugins subfolder of you ImageJ installation
 e.g. lib://Documents/ImageJ/Plugins
 
 ImageJ.app is the ImageJ2 executable, and this is an ImageJ 1 plugin
 
 This ensures that the final `.jar` file will also be copied to
 your ImageJ plugins folder everytime you run the Maven build.
+***EDIT: stil doesn't work, still doesn't copy to plugins folder automatically on build: have to do it manually after
+(or manually add the copy action to the build workflow)
