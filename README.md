@@ -118,7 +118,7 @@ In the Eclipse Package Explorer, click on the twisty to open up > src/main/java
     the Maven build workflow, so you need to manually change this and other things as follows;
   - left click it (mouse still over com.my_company.imagej), choose Refactor in the context sensitive menu that appears,
     and then Rename in the sub-menu that then appears.  
-    In the dialog box that comes up, entre a names that matches the name you have specified in pom.xml and plugins.config
+    In the dialog box that comes up, enter a names that matches the name you have specified in pom.xml and plugins.config
     The default Update Dependencies box is ticked - this works.
     When you click OK (or continue, can't recall now what the proceeed button is titled),
     a warning dialog will then appear, something to do with the main method:
