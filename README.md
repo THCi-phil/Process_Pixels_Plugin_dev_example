@@ -120,7 +120,7 @@ In the Eclipse Package Explorer, click on the twisty to open up > src/main/java
     and then Rename in the sub-menu that then appears.  
     In the dialog box that comes up, enter a names that matches the name you have specified in pom.xml and plugins.config
     The default Update Dependencies box is ticked - this works.
-    When you click OK (or continue, can't recall now what the proceeed button is titled),
+    When you click OK (or continue, can't recall now what the proceed button is titled),
     a warning dialog will then appear, something to do with the main method:
     this can be ignored, just click continue.
     
@@ -144,8 +144,8 @@ An Edit Configuration dialog will appear.
     (i.e. not in a subfolder of the workspace folder Eclipse creates).  Note that you ***won't*** see it in
     Eclipse Package Explorer target folder.
   - you can copy the *.jar manually to the /plugins folder of your normal ImageJ installation,
-    and it will then appear as a new last itam on the Process menu (assuming you have at this point kep the
-    Process_Pixels cosde, and the first entry in the plugins.config line remains Process)
+    and it will then appear as a new last item on the Process menu (assuming you have at this point kept the
+    Process_Pixels code, and the first entry in the plugins.config line remains Process)
 
 To make Maven copy the plugin automatically, return to instructions in original README.mdin the file, but it should read
 
@@ -157,7 +157,7 @@ To make Maven copy the plugin automatically, return to instructions in original 
     - name: `scijava.app.directory`
     - value: `/path/to/ImageJ.app/`
 
-***EDIT: with the correction, the value field should be the path on your machine to the plugins subfolder of you ImageJ installation
+***EDIT: with the correction, the value field should be the path on your machine to the plugins subfolder of your ImageJ installation
 e.g. lib://Documents/ImageJ/Plugins
 
 ImageJ.app is the ImageJ2 executable, and this is an ImageJ 1 plugin
