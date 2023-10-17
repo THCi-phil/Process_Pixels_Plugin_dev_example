@@ -2,6 +2,7 @@ This is an edited version of https://github.com/imagej/example-legacy-plugin/
 
 With corrections to the instructions so they work !
 
+Updated 2023 10 17.  Need to Update pom.xml pom-scijava to 37.0.0 to work with 2023-09 release of Eclipse
 
 This is an example Maven project implementing an ImageJ 1.x plugin.
 
